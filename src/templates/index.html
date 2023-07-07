@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block content %}
+<h1>{% block title %} Welcome to FlaskBlog {% endblock %}</h1>
+{% for article in articles %}
+<a href="#">
+    <h2>{{ article['title'] }}</h2>
+</a>
+<span class="badge badge-primary">{{ article['content'] }}</span>
+<span class="badge badge-primary">{{ article[''] }}</span>
+<hr />
+{% endfor %} {% endblock %}
